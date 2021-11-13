@@ -18,6 +18,7 @@ public class management : MonoBehaviour
     private GameObject p;
     public Text D;
     
+    
     private GameObject marks;
     int index=0;
     private GameObject start,end;
