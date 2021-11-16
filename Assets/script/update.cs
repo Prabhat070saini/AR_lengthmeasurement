@@ -49,13 +49,16 @@ public class update : MonoBehaviour
         if (iscomplete == true)
         {
             float Distance = Vector3.Distance(start.transform.position, end.transform.position) * 100;
-            Debug.Log(Distance);
+            // Debug.Log(Distance);
             D.text = Distance.ToString("F2");
         }
 
 
     }
-
+     public void Exit()
+    {
+        Application.Quit();
+    }
     public void btn()
     {
         if (ispalce==false)
@@ -71,7 +74,7 @@ public class update : MonoBehaviour
         else
         {
             p2=Instantiate(point,mark.transform.position,Quaternion.identity);
-             lines.SetPosition(1,p1.transform.position);
+             lines.SetPosition(1,p2.transform.position);
              iscomplete=false;
              ispalce=false;
              end.transform.position=p2.transform.position;
