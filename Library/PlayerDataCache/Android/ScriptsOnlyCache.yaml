@@ -1,8 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ARFeatheredPlaneMeshVisualizer
     - SceneChanger
-    - update
+    - updateControler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -44,9 +45,14 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
     Assets/Scenes/HOME.unity:
     - Class: 1
@@ -72,31 +78,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1462}
+      Script: {instanceID: 1466}
     - Class: 114
-      Script: {instanceID: 1736}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 1996}
+      Script: {instanceID: 2000}
     - Class: 114
-      Script: {instanceID: 2304}
+      Script: {instanceID: 2308}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2410}
     - Class: 114
-      Script: {instanceID: 2454}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2510}
+      Script: {instanceID: 2516}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2574}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 3786}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 4060}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,51 +147,63 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1462}
+      Script: {instanceID: 1466}
     - Class: 114
-      Script: {instanceID: 1496}
+      Script: {instanceID: 1500}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1736}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 2004}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 2304}
+      Script: {instanceID: 2008}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2308}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2336}
     - Class: 114
-      Script: {instanceID: 2454}
+      Script: {instanceID: 2410}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2844}
+      Script: {instanceID: 2574}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3284}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3370}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 3418}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 3376}
     - Class: 114
-      Script: {instanceID: 4062}
+      Script: {instanceID: 3424}
     - Class: 114
-      Script: {instanceID: 4220}
+      Script: {instanceID: 3428}
     - Class: 114
-      Script: {instanceID: 4304}
+      Script: {instanceID: 3570}
+    - Class: 114
+      Script: {instanceID: 3658}
+    - Class: 114
+      Script: {instanceID: 3718}
+    - Class: 114
+      Script: {instanceID: 3866}
+    - Class: 114
+      Script: {instanceID: 4068}
+    - Class: 114
+      Script: {instanceID: 4226}
+    - Class: 114
+      Script: {instanceID: 4310}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -331,12 +349,6 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
-      Hash: 3f9b1d6e1a9874bcc4a00d8a425bbf04
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: check
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -473,6 +485,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 76b7e183d9d3382d8f2b9ae1c01d0aa6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARFeatheredPlaneMeshVisualizer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -751,10 +769,10 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: ad2c1ea2a1e2d60b2ab29d9ca989ba3d
+      Hash: 4b2bc2795871a5187cd29adaa84774d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: update
+    className: updateControler
   - hash:
       serializedVersion: 2
       Hash: 8ab9295d94483c961936d82d233d3df2
@@ -839,12 +857,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
-  - hash:
-      serializedVersion: 2
-      Hash: cb2b72bcef75c2d4dc03d2821c372fba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: line
   - hash:
       serializedVersion: 2
       Hash: 8b1fe5dfdcf943fb3b72506b9f19335f
@@ -1137,4 +1149,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/HOME.unity
   - Assets/Scenes/mainscence.unity
-  playerPath: C:/Users/hp/Desktop/leanth14.apk
+  playerPath: E:/AR boot/leanth19.apk
