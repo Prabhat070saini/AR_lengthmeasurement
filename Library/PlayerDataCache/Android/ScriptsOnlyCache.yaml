@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - updateControler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.Editor.dll:
+    - TMPro.EditorUtilities.TMP_EditorPanel
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
@@ -772,7 +774,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: d2f92ee414c725ae796a6c09b2e5077f
+      Hash: c96ba10ae312a6a7871a9b58e1026c4b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: updateControler
@@ -1152,4 +1154,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/HOME.unity
   - Assets/Scenes/mainscence.unity
-  playerPath: E:/AR boot/leanth24.apk
+  playerPath: E:/AR boot/leanth25.apk

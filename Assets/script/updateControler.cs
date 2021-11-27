@@ -24,8 +24,8 @@ public class updateControler : MonoBehaviour
     float distanceR, Distance;
     string unit;
    
-    public TMP_Text length1;
-     public TMP_Text length;
+    public TMP_Text Tlength1;
+     public TMP_Text Tlength;
 
     private GameObject marks;
 
@@ -56,10 +56,10 @@ public class updateControler : MonoBehaviour
         {
             Distance = Vector3.Distance(start.transform.position, end.transform.position);
             //  Debug.Log(Distance); 
-             length1.transform.SetParent(lines.transform);
-            length1.transform.position=(start.transform.position+end.transform.position)/2;
-            length1.transform.rotation=arcamera.transform.rotation;
-            length1.text = (Distance * distanceR).ToString("F2") + unit;
+            //  length1.transform.SetParent(lines.transform);
+            Tlength1.transform.rotation=arcamera.transform.rotation;
+            Tlength1.transform.position=(start.transform.position+end.transform.position)/2;
+            Tlength1.text = (Distance * distanceR).ToString("F2") + unit;
             // length1.text = "jhfdskhkhkhjgfhfjhhfg";
         }
 
@@ -85,7 +85,7 @@ public class updateControler : MonoBehaviour
             iscomplete = true;
             start = p1;
 
-            // length1=Instantiate(length,start.transform.position, Quaternion.identity);
+            Tlength1=Instantiate(Tlength,start.transform.position, Quaternion.identity);
 
 
         }
