@@ -991,6 +991,7 @@ m_PackageAssets:
         - 4.2.0
         - 4.2.1
         - 5.0.0-pre.5
+        - 5.0.0-pre.6
         compatible:
         - 1.0.0-preview.24
         - 2.0.2
@@ -1222,6 +1223,7 @@ m_PackageAssets:
         - 4.2.0
         - 4.2.1
         - 5.0.0-pre.5
+        - 5.0.0-pre.6
         compatible:
         - 1.0.0-preview.12
         - 1.0.0-preview.13
@@ -3182,6 +3184,8 @@ m_PackageAssets:
         - 4.2.0-pre.12
         - 4.2.0
         - 4.2.1
+        - 5.0.0-pre.5
+        - 5.0.0-pre.6
         compatible:
         - 4.1.7
         - 4.2.0-pre.2

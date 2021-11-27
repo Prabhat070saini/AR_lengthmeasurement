@@ -23,7 +23,9 @@ public class updateControler : MonoBehaviour
     public Dropdown Dd;
     float distanceR, Distance;
     string unit;
-
+   
+    public TMP_Text length1;
+     public TMP_Text length;
 
     private GameObject marks;
 
@@ -31,8 +33,8 @@ public class updateControler : MonoBehaviour
     bool iscomplete = false, ispalce = false;
     void Start()
     {
-       unit=" m";
-       distanceR=1f;
+        unit = " m";
+        distanceR = 1f;
     }
 
     // Update is called once per frame
@@ -54,13 +56,16 @@ public class updateControler : MonoBehaviour
         {
             Distance = Vector3.Distance(start.transform.position, end.transform.position);
             //  Debug.Log(Distance); 
-            // lines.transform.SetParent(D.transform);
-            D.text = (Distance*distanceR).ToString("F2")+unit;
+             length1.transform.SetParent(lines.transform);
+            length1.transform.position=(start.transform.position+end.transform.position)/2;
+            length1.transform.rotation=arcamera.transform.rotation;
+            length1.text = (Distance * distanceR).ToString("F2") + unit;
+            // length1.text = "jhfdskhkhkhjgfhfjhhfg";
         }
 
 
     }
-     public void Restar()
+    public void Restar()
     {
         SceneManager.LoadScene("mainscence");
         //  Egginstiate.SetActive(true);
@@ -79,7 +84,9 @@ public class updateControler : MonoBehaviour
             ispalce = true;
             iscomplete = true;
             start = p1;
-           
+
+            // length1=Instantiate(length,start.transform.position, Quaternion.identity);
+
 
         }
         else
@@ -96,7 +103,7 @@ public class updateControler : MonoBehaviour
     {
         if (Dd.value == 1)
         {
-            distanceR =  100f;
+            distanceR = 100f;
             unit = " cm";
         }
         else if (Dd.value == 0)
@@ -106,8 +113,8 @@ public class updateControler : MonoBehaviour
         }
         else
         {
-            distanceR=39.3701f;
-            unit=" inch";
+            distanceR = 39.3701f;
+            unit = " inch";
 
         }
     }
