@@ -23,18 +23,23 @@ public class updateControler : MonoBehaviour
     public Dropdown Dd;
     float distanceR, Distance;
     string unit;
-   
+    public GameObject panal;
+    Animation panalanimation;
+
     public TMP_Text Tlength1;
-     public TMP_Text Tlength;
+    public TMP_Text Tlength;
 
     private GameObject marks;
 
     private GameObject start, end;
     bool iscomplete = false, ispalce = false;
+    // panal control variable
+    public panalcontroler Panalcontrolscript;
     void Start()
     {
         unit = " m";
         distanceR = 1f;
+        panalanimation = panal.GetComponent<Animation>();
     }
 
     // Update is called once per frame
@@ -57,10 +62,11 @@ public class updateControler : MonoBehaviour
             Distance = Vector3.Distance(start.transform.position, end.transform.position);
             //  Debug.Log(Distance); 
             //  length1.transform.SetParent(lines.transform);
-            Tlength1.transform.rotation=arcamera.transform.rotation;
-            Tlength1.transform.position=(start.transform.position+end.transform.position)/2;
+            Tlength1.transform.rotation = arcamera.transform.rotation;
+            Tlength1.transform.position = (start.transform.position + end.transform.position) / 2;
             Tlength1.text = (Distance * distanceR).ToString("F2") + unit;
             // length1.text = "jhfdskhkhkhjgfhfjhhfg";
+            D.text= (Distance * distanceR).ToString("F2") + unit;
         }
 
 
@@ -85,7 +91,7 @@ public class updateControler : MonoBehaviour
             iscomplete = true;
             start = p1;
 
-            Tlength1=Instantiate(Tlength,start.transform.position, Quaternion.identity);
+            Tlength1 = Instantiate(Tlength, start.transform.position, Quaternion.identity);
 
 
         }
@@ -98,6 +104,24 @@ public class updateControler : MonoBehaviour
             end.transform.position = p2.transform.position;
 
         }
+    }
+    int onof = 0;
+    public void settingbtn()
+    {
+        if (onof == 0)
+        {
+            panalanimation["useanimation"].speed = 1;
+            panalanimation.Play();
+            Panalcontrolscript.panalopen();
+            onof++;
+        }
+        else
+        {
+            Panalcontrolscript.panaloff();
+            onof--;
+        }
+
+
     }
     public void drop()
     {

@@ -3,13 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ARFeatheredPlaneMeshVisualizer
     - SceneChanger
+    - panalcontroler
     - updateControler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.TextMeshPro.Editor.dll:
-    - TMPro.EditorUtilities.TMP_EditorPanel
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
+    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
@@ -89,23 +89,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2304}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 2454}
+      Script: {instanceID: 2456}
     - Class: 114
-      Script: {instanceID: 2512}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2570}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 3700}
     - Class: 114
-      Script: {instanceID: 3786}
+      Script: {instanceID: 3790}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 4058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -166,49 +166,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 2454}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2474}
+      Script: {instanceID: 2456}
     - Class: 114
-      Script: {instanceID: 2570}
+      Script: {instanceID: 2476}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2762}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2848}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2858}
     - Class: 114
       Script: {instanceID: 3010}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 3286}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 3290}
+    - Class: 114
+      Script: {instanceID: 3376}
     - Class: 114
       Script: {instanceID: 3424}
     - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3428}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3568}
     - Class: 114
-      Script: {instanceID: 3712}
+      Script: {instanceID: 3656}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 4062}
+      Script: {instanceID: 3864}
     - Class: 114
-      Script: {instanceID: 4220}
+      Script: {instanceID: 4066}
     - Class: 114
-      Script: {instanceID: 4304}
+      Script: {instanceID: 4224}
+    - Class: 114
+      Script: {instanceID: 4308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -442,6 +446,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARFace
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: inputstring
   - hash:
       serializedVersion: 2
       Hash: 27e5341178f188b89bdc6495710b590c
@@ -690,6 +700,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 66831f2dbd5d25c4104368c877337953
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: panalcontroler
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -774,7 +790,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: c96ba10ae312a6a7871a9b58e1026c4b
+      Hash: a85b44b09e2edfe48769ca6b3f50dcb4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: updateControler
@@ -1154,4 +1170,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/HOME.unity
   - Assets/Scenes/mainscence.unity
-  playerPath: E:/AR boot/leanth25.apk
+  playerPath: E:/AR boot/usbdebugging45.apk
