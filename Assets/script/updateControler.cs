@@ -106,6 +106,11 @@ public class updateControler : MonoBehaviour
         }
     }
     int onof = 0;
+    public void cancle(){
+         Panalcontrolscript.panaloff();
+            onof--;
+
+    }
     public void settingbtn()
     {
         if (onof == 0)

@@ -3,13 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ARFeatheredPlaneMeshVisualizer
     - SceneChanger
+    - clickimage
+    - colorchane
     - panalcontroler
     - updateControler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
-    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
@@ -39,6 +40,12 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -81,31 +88,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1464}
+      Script: {instanceID: 1468}
     - Class: 114
-      Script: {instanceID: 1738}
+      Script: {instanceID: 1744}
     - Class: 114
-      Script: {instanceID: 1996}
+      Script: {instanceID: 2002}
     - Class: 114
-      Script: {instanceID: 2304}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 2514}
+      Script: {instanceID: 2522}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2760}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3700}
+      Script: {instanceID: 3710}
     - Class: 114
-      Script: {instanceID: 3790}
+      Script: {instanceID: 3800}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4068}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -143,76 +150,88 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1464}
+      Script: {instanceID: 1468}
     - Class: 114
-      Script: {instanceID: 1498}
+      Script: {instanceID: 1502}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1614}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1738}
+      Script: {instanceID: 1744}
     - Class: 114
-      Script: {instanceID: 2004}
+      Script: {instanceID: 2010}
     - Class: 114
-      Script: {instanceID: 2304}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2326}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2422}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2760}
     - Class: 114
-      Script: {instanceID: 2762}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 3018}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3132}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3276}
     - Class: 114
-      Script: {instanceID: 3376}
+      Script: {instanceID: 3300}
     - Class: 114
-      Script: {instanceID: 3424}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3428}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3656}
+      Script: {instanceID: 3578}
     - Class: 114
-      Script: {instanceID: 3716}
+      Script: {instanceID: 3666}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3726}
     - Class: 114
-      Script: {instanceID: 4066}
+      Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4224}
+      Script: {instanceID: 4076}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 4234}
+    - Class: 114
+      Script: {instanceID: 4318}
+    - Class: 114
+      Script: {instanceID: 16400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -434,6 +453,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 399b8fa798a885d1c3245b7ebdc6c989
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: colorchane
   - hash:
       serializedVersion: 2
       Hash: 37a13922678947e6d144f41a7195154a
@@ -778,6 +803,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: 1cb8f76cbd07be537f7016cbf8a600b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: clickimage
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -790,7 +821,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: a85b44b09e2edfe48769ca6b3f50dcb4
+      Hash: c012525912612de6ec6a4ac961f5d43d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: updateControler
@@ -1170,4 +1201,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/HOME.unity
   - Assets/Scenes/mainscence.unity
-  playerPath: E:/AR boot/usbdebugging45.apk
+  playerPath: E:/AR boot/PrabhatsainiARRULER.apk
