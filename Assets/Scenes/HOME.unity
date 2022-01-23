@@ -761,7 +761,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1240271385}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: Scene1
+        m_MethodName: horizantal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

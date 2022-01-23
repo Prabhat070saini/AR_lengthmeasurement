@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;  
 using UnityEngine.SceneManagement;  
 public class SceneChanger: MonoBehaviour {  
-    public void Scene1() {  
-        SceneManager.LoadScene("mainscence");  
+  
+    public void horizantal() {  
+        SceneManager.LoadScene("horizantal sence");  
     }  
-    public void Scene2() {  
-        SceneManager.LoadScene("HOME");  
+    public void vertical() {  
+        SceneManager.LoadScene("verticalsence");  
     }  
     // public void Scene3() {  
     //     SceneManager.LoadScene("Scene3");  

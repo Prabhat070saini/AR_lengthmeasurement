@@ -71,9 +71,14 @@ public class updateControler : MonoBehaviour
 
 
     }
-    public void Restar()
+    public void horizantalrst()
     {
-        SceneManager.LoadScene("mainscence");
+        SceneManager.LoadScene("horizantal sence");
+        //  Egginstiate.SetActive(true);
+    }
+     public void vrticalrst()
+    {
+        SceneManager.LoadScene("verticalsence");
         //  Egginstiate.SetActive(true);
     }
     public void Exit()

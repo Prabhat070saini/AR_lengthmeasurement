@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/HOME.unity
     guid: 22a8cacf7e23f304e8452a8372d785a9
   - enabled: 1
-    path: Assets/Scenes/mainscence.unity
+    path: Assets/Scenes/horizantal sence.unity
+    guid: 9b5151a860f517046948caf48266cb96
+  - enabled: 1
+    path: Assets/Scenes/verticalsence.unity
     guid: c4c087e5a2c22c843ac9f5c662742666
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: bae2135e7dcadcf4081bfea5de70a81f, type: 2}
